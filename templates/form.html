@@ -1,0 +1,43 @@
+{% extends 'base.html' %}{% block start %}
+<form
+  method="POST"
+  enctype="multipart/form-data"
+  action="/"
+  id="loading_form"
+  onsubmit="loadingHandler()"
+>
+  
+    
+    <div class="container">
+      <!-- <div class="heading-field">Novi Marine</div> -->
+      <div class="row gx-5 upload-section mt-2">
+        <div class="col">
+          <div class="p-3 my-5">{% include 'software_form.html' %}</div>
+        </div>
+        <div class="col">
+          <div class="p-3 my-5">{% include 'handwritten_form.html' %}</div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="my-2 text-center">
+    <button
+      type="submit"
+      class="convert-btn"
+      id="submit-button"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Start"
+    >
+      Start
+    </button>
+
+    
+  </div>
+  
+</div>
+</form>
+
+{% endblock start %}

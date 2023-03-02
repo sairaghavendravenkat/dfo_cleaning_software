@@ -1,0 +1,23 @@
+{% extends 'base.html' %}{% block start %}
+<!-- <div class="loader-div">
+    <span class="loader">
+      <span></span>
+      <span></span>
+    </span>
+</div> -->
+<div class="output commands">
+    <div class="heading-field text-center p-3" >software outputs</div>
+    <!-- <div class="row gx-5 text-center upload-section mt-2"> -->
+      <!-- <div class="col">
+        <div class="text-center p-3 log-content">{{ log_contents }}</div>
+      </div> -->
+      <!-- </div> -->
+      <div class="text-center p-3 log-content">
+        {% for line in log_contents %}
+          <p>{{ line }}</p>
+        {% endfor %}
+      </div>
+    </div>
+    
+</div>
+{% endblock start %}
